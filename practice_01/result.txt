@@ -1,4 +1,4 @@
-Your list: 3.11 2.28 0.00 1.00 
-Format list: 0.40 0.30 0.00 0.13 
-Ascending list: 0.00 0.13 0.30 0.40 
-Descending list: 0.40 0.30 0.13 0.00 
+Your list: 1.00 3.00 3.00 2.00 5.00 6.00 
+Format list: 0.13 0.39 0.39 0.26 0.65 0.78 
+Ascending list: 0.13 0.26 0.39 0.39 0.65 0.78 
+Descending list: 0.78 0.65 0.39 0.39 0.26 0.13 
