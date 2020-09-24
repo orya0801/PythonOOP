@@ -36,7 +36,6 @@ def sort_list(numbers, desc=True):
         sort_list_desc(numbers)
     else:
         sort_list_asc(numbers)
-    return numbers
 
 
 def sort_list_asc(numbers):
