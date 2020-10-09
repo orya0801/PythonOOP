@@ -25,10 +25,6 @@ class Pizza:
     def price(self):
         return self.__price
 
-    @price.setter
-    def price(self, price):
-        self.__price = price
-
     def __str__(self):
         return "{0} - {1}\t{2}".format(self.name, self.size, self.price)
 

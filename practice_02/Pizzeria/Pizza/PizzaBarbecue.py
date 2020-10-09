@@ -6,26 +6,16 @@ class PizzaBarbecue(Pizza):
     __prices = {
         "small": 300,
         "middle": 400,
-        "large": 500,
-        "extra large": 600
+        "large": 500
     }
 
-    def __init__(self, size="middle"):
+    def __init__(self, size):
         super().__init__(size)
-        self.__size = size
-        self.__price = self.__prices.get(size)
-
-    @classmethod
-    def get_name(cls):
-        return cls.__name
+        self.__price = self.__prices[size]
 
     @property
     def name(self):
         return self.__name
-
-    @name.setter
-    def name(self, name):
-        self.__name = name
 
     @property
     def prices(self):
@@ -33,13 +23,13 @@ class PizzaBarbecue(Pizza):
 
     @property
     def size(self):
-        return self.__size
+        return super(PizzaBarbecue, self).size
 
     @size.setter
     def size(self, size):
         if size in self.__prices:
             self.__size = size
-            self.__price = self.__prices.get(size)
+            self.__price = self.__prices[size]
         else:
             raise Exception("Given size doesn't exist for this pizza")
 
@@ -47,9 +37,9 @@ class PizzaBarbecue(Pizza):
     def price(self):
         return self.__price
 
-    @price.setter
-    def price(self, price):
-        self.__price = price
+    @classmethod
+    def get_name(cls):
+        return cls.__name
 
     @classmethod
     def info(cls):

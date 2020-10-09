@@ -9,18 +9,13 @@ class PizzaMargarita(Pizza):
             "large": 500
         }
 
-    def __init__(self, size="small"):
+    def __init__(self, size):
         super().__init__(size)
-        self.__size = size
         self.__price = self.__prices[size]
 
     @property
     def name(self):
         return self.__name
-
-    @name.setter
-    def name(self, name):
-        self.__name = name
 
     @property
     def prices(self):
@@ -28,7 +23,7 @@ class PizzaMargarita(Pizza):
 
     @property
     def size(self):
-        return self.__size
+        return super(PizzaMargarita, self).size
 
     @size.setter
     def size(self, size):
@@ -41,10 +36,6 @@ class PizzaMargarita(Pizza):
     @property
     def price(self):
         return self.__price
-
-    @price.setter
-    def price(self, price):
-        self.__price = price
 
     @classmethod
     def get_name(cls):

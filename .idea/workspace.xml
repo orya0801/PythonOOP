@@ -2,25 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28115da9-b3d1-40a1-888f-4513379e7537" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/practice_02/Chess/Color.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Chess/Figures/Bishop.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Chess/Figures/King.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Chess/Figures/Pawn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Chess/Figures/Queen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Chess/Figures/Rook.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Pizzeria/Menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Pizzeria/Order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/Pizza.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/PizzaBarbecue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/PizzaMargarita.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/PizzaPepperoni.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Pizzeria/Restaurant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Pizzeria/Terminal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_02/Pizzeria/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice_02/Chess/Board.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice_02/Chess/Board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice_02/Chess/Figures/Figure.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice_02/Chess/Figures/Figure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice_02/Chess/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice_02/Chess/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Chess/Board.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Chess/Color.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Chess/Figures/Bishop.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Chess/Figures/Figure.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Chess/Figures/King.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Chess/Figures/Pawn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Chess/Figures/Queen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Chess/Figures/Rook.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Chess/Game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/Pizza.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/Pizza.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/PizzaBarbecue.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/PizzaBarbecue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/PizzaMargarita.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/PizzaMargarita.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/PizzaPepperoni.py" beforeDir="false" afterPath="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/PizzaPepperoni.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,28 +46,6 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="Figure" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="OOP Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice_02/Chess/Figures" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice_02/Chess/Figures/Figure.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OOP Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,7 +112,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sort_numbers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pizza_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="OOP Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,12 +120,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice_01" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice_02/Pizzeria/Pizza" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice_01/sort_numbers.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice_02/Pizzeria/Pizza/pizza_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="OOP Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/practice_02" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice_02/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,10 +159,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.pizza_test" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.Restaurant" />
         <item itemvalue="Python.Game" />
-        <item itemvalue="Python.Figure" />
-        <item itemvalue="Python.sort_numbers" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +188,7 @@
       <workItem from="1601156799940" duration="2803000" />
       <workItem from="1601241752660" duration="9405000" />
       <workItem from="1601291436091" duration="19634000" />
+      <workItem from="1602243950501" duration="10719000" />
     </task>
     <task id="LOCAL-00001" summary="chess">
       <created>1600989920790</created>
@@ -212,10 +208,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="chess" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="72" y="183" key="#Inspections" timestamp="1601246029966">
+    <state x="72" y="183" key="#Inspections" timestamp="1602253908133">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="72" y="183" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1601246029966" />
+    <state x="72" y="183" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1602253908133" />
     <state x="730" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599082499503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -224,22 +220,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600989918824" />
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1601325106173">
+    <state width="914" height="263" key="GridCell.Tab.0.bottom" timestamp="1602259696887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601325106173" />
-    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1601325106173">
+    <state width="914" height="263" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602259696887" />
+    <state width="914" height="263" key="GridCell.Tab.0.center" timestamp="1602259696887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601325106173" />
-    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1601325106173">
+    <state width="914" height="263" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602259696887" />
+    <state width="914" height="263" key="GridCell.Tab.0.left" timestamp="1602259696887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601325106173" />
-    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1601325106173">
+    <state width="914" height="263" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602259696887" />
+    <state width="914" height="263" key="GridCell.Tab.0.right" timestamp="1602259696887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601325106173" />
+    <state width="914" height="263" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602259696887" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1601325106173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,18 +252,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601325106173" />
+    <state x="319" y="235" key="RollbackChangesDialog" timestamp="1602258151779">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="319" y="235" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602258151779" />
     <state x="675" y="151" key="SettingsEditor" timestamp="1599065173926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="675" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599065173926" />
-    <state x="1142" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1601291710755">
+    <state x="1142" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1602244565100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1142" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601291710755" />
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1601250862017">
+    <state x="1142" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602244565100" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1602255010333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601250862017" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1602255010333" />
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1602248735471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602248735471" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -277,10 +281,12 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/OOP_Python$test.coverage" NAME="test Coverage Results" MODIFIED="1602254358651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practice_02" />
+    <SUITE FILE_PATH="coverage/OOP_Python$pizza_test.coverage" NAME="pizza_test Coverage Results" MODIFIED="1602254988741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practice_02/Pizzeria/Pizza" />
     <SUITE FILE_PATH="coverage/OOP_Python$Figure.coverage" NAME="Figure Coverage Results" MODIFIED="1600983041942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practice_02/Chess/Figures" />
     <SUITE FILE_PATH="coverage/OOP_Python$Game.coverage" NAME="Game Coverage Results" MODIFIED="1601157494328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practice_02/Chess" />
     <SUITE FILE_PATH="coverage/OOP_Python$sort_numbers.coverage" NAME="sort_numbers Coverage Results" MODIFIED="1600266683732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practice_01" />
-    <SUITE FILE_PATH="coverage/OOP_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1601324918259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practice_02/Pizzeria" />
+    <SUITE FILE_PATH="coverage/OOP_Python$main.coverage" NAME="main Coverage Results" MODIFIED="1602259696878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practice_02/Pizzeria" />
     <SUITE FILE_PATH="coverage/OOP_Python$Restaraunt.coverage" NAME="Restaraunt Coverage Results" MODIFIED="1601246098609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/practice_02/Pizzeria" />
   </component>
 </project>
