@@ -22,6 +22,8 @@ class Restaurant:
 
         self.cooking(order)
 
+        print("Your order is ready!")
+
     def add_terminal(self, terminal):
         if terminal.restaurant == self:
             self.terminals.append(terminal)

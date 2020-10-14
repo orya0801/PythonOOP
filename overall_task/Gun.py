@@ -7,7 +7,7 @@ class Gun:
         self._start_speed = 10
         self._upgrade_cost = 5
         self._level = 1
-        self.ammo = self._max_ammo
+        self._ammo = self._max_ammo
 
     @property
     def max_level(self):
@@ -16,6 +16,10 @@ class Gun:
     @property
     def damage(self):
         return self._damage
+
+    @property
+    def ammo(self):
+        return self._ammo
 
     @property
     def max_ammo(self):

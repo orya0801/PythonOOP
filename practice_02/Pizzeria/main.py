@@ -1,14 +1,10 @@
 from practice_02.Pizzeria.Restaurant import Restaurant
 from practice_02.Pizzeria.Menu import Menu
-from practice_02.Pizzeria.Order import Order
 from practice_02.Pizzeria.Terminal import Terminal
-from practice_02.Pizzeria.Pizza.PizzaBarbecue import PizzaBarbecue
-from practice_02.Pizzeria.Pizza.PizzaMargarita import PizzaMargarita
-from practice_02.Pizzeria.Pizza.PizzaPepperoni import PizzaPepperoni
+from practice_02.Pizzeria.Pizza.Pizza import PizzaMargarita, PizzaPepperoni, PizzaBarbecue
 
 
 def main():
-    # Creating pizza
     menu_list = [PizzaBarbecue, PizzaPepperoni, PizzaMargarita]
     menu = Menu(menu_list)
 

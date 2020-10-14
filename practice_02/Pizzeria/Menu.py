@@ -16,6 +16,7 @@ class Menu:
         menu_str = "Menu:\n"
 
         for pizza in self.list:
-            menu_str += "\t{0}\n".format(pizza.info())
+            custom_pizza = pizza()
+            menu_str += "\t{0}\n".format(custom_pizza.info())
 
         return menu_str
