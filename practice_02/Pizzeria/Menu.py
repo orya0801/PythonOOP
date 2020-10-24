@@ -2,6 +2,7 @@ class Menu:
     def __init__(self, menu):
         self.list = menu
 
+    #   Поиск пиццы по имени и создание нового экземпляра, заданного размера
     def get_pizza_by_name(self, pizza_params):
         pizza = next((pizza for pizza in self.list if pizza.get_name() == pizza_params[0]), None)
 

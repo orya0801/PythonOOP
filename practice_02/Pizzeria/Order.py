@@ -1,7 +1,6 @@
 class Order:
-    def __init__(self, terminal, guests):
+    def __init__(self, terminal):
         self.terminal = terminal
-        self.guests = guests
         self.order_list = []
         self.price = 0
 
@@ -13,7 +12,6 @@ class Order:
         order_str = ""
 
         order_str += "{0}\n".format(self.terminal)
-        order_str += "Number of guests: {0}\n".format(self.guests)
 
         count = 1
         for pizza in self.order_list:
@@ -26,3 +24,10 @@ class Order:
 
     def print(self):
         print(self)
+
+    # Перегрузка методов сложения и вычитания
+    def __add__(self, pizza):
+        self.order_list.append(pizza)
+
+    def __sub__(self, pizza):
+        self.order_list.remove(pizza)

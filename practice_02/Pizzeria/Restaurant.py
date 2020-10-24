@@ -1,28 +1,44 @@
+from practice_02.Pizzeria.Menu import Menu
+from practice_02.Pizzeria.Pizza import PizzaBarbecue, PizzaPepperoni, PizzaMargarita
+
+
 class Restaurant:
+    # Счетчик гостей всех ресторанов сети
     __guests = 0
+    # Имя ресторана
     __name = "Dodo Pizza"
 
-    def __init__(self, open_time, close_time, menu):
+    def __init__(self, open_time, close_time):
         self.open_time = open_time
         self.close_time = close_time
         self.terminals = []
-        self.menu = menu
+        # Отношение композиции
+        self.menu = Menu([PizzaPepperoni, PizzaMargarita, PizzaBarbecue])
 
     @property
     def guests(self):
         return self.__guests
 
-    def serve_new_guests(self, n_guests):
-        self.__guests += n_guests
+    @property
+    def name(self):
+        return self.__name
 
-        for term in self.terminals:
-            if term.is_working and not term.is_busy:
-                order = term.start_working(n_guests)
-                break
+    #   Метод, реализующий обслуживание новых гостей
+    def serve_new_guests(self, n_guests, time):
+        if self.__is_open(time):
+            self.__guests += n_guests
 
-        self.cooking(order)
+            while True:
+                for term in self.terminals:
+                    order = term.start_working()
 
-        print("Your order is ready!")
+                if order is not None:
+                    break
+
+            self.__cooking(order)
+            print("Your order is ready!")
+        else:
+            print("Closed!")
 
     def add_terminal(self, terminal):
         if terminal.restaurant == self:
@@ -30,12 +46,14 @@ class Restaurant:
         else:
             raise Exception("Terminal belongs to another restaraunt")
 
-    def is_open(self, time):
+    #   Метод проверки работы ресторана
+    def __is_open(self, time):
         if self.close_time >= time >= self.open_time:
             return True
         return False
 
-    def cooking(self, order):
+    #   Метод начала приготовления ресторана
+    def __cooking(self, order):
         for pizza in order.order_list:
             pizza.cook()
 
