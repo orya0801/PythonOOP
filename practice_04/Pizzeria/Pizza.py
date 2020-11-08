@@ -1,8 +1,10 @@
 from Pizzeria.PizzaPrices import PRICES
+from Pizzeria.Dish import Dish
+from Pizzeria.PizzaMetaclass import PizzaMetaclass
 import time
 
 
-class Pizza:
+class Pizza(metaclass=PizzaMetaclass):
 
     def __init__(self, size, name, ingredients, sauce, dough):
         self._name = name

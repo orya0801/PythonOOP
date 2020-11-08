@@ -1,4 +1,4 @@
-from practice_02.Pizzeria.Order import Order
+from Pizzeria.Order import Order
 
 
 class Terminal:
