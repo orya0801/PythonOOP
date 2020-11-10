@@ -1,0 +1,19 @@
+Terminal 1
+1. BBQ - small	300
+2. Margarita - middle	300
+3. Pepperoni - large	480
+TOTAL: 1080
+
+Terminal 1
+1. BBQ - small	300
+TOTAL: 300
+
+Terminal 1
+1. BBQ - small	300
+TOTAL: 300
+
+Terminal 1
+1. BBQ - large	470
+2. BBQ - small	300
+TOTAL: 770
+
