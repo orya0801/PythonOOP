@@ -1,13 +1,6 @@
 import time, types
 from functools import wraps
 
-"""
-    PizzaMetaclass предназначен для отслеживания типов создаваемых объектов
-    при выполнении программы. С помощью его можно понять последовать выполнения
-    методов __new__, __init__ и __call__ для отлавливания ошибок при преобразовании
-    типов. 
-"""
-
 
 class PizzaMetaclass(type):
     def __new__(cls, class_name, parents, attributes):

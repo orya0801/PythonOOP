@@ -1,9 +1,11 @@
+import asyncio
+
 from Pizzeria.Menu import Menu
 from Pizzeria.Pizza import PizzaBarbecue, PizzaPepperoni, PizzaMargarita
 from functools import wraps
+from threading import Thread
 
 
-# Декоратор для отслеживания начала и конца времени начала
 def decorator_serve(serve):
     import datetime
     import time
@@ -12,16 +14,17 @@ def decorator_serve(serve):
     def wrapper(self, n_guests, visit_time):
         start = time.time()
         print("Order is created in {}".format(datetime.datetime.now()))
-        serve(self, n_guests, visit_time)
+        order = serve(self, n_guests, visit_time)
         end = time.time()
         print("Order is finished in {}".format(datetime.datetime.now()))
         print("Lead time: {}".format(end - start))
 
+        return order
     return wrapper
 
 
 def decorator_add_term(add_term):
-    def add_term_error():
+    def term_is_not_belong_to_rest():
         print("Terminal belongs to another restaraunt")
 
     @wraps(add_term)
@@ -29,7 +32,7 @@ def decorator_add_term(add_term):
         if terminal.restaurant == self:
             return add_term(self, terminal)
         else:
-            return add_term_error()
+            return term_is_not_belong_to_rest()
 
     return wrapper
 
@@ -63,15 +66,20 @@ class Restaurant:
 
             while True:
                 for term in self.terminals:
-                    order = term.start_working()
+                    if term.is_working and not term.is_busy:
+                        order = term.start_working()
+                        break
 
                 if order is not None:
                     break
 
-            self.__cooking(order)
+            asyncio.run(self.cooking_async(order))
             print("Your order is ready!")
+
+            return order
         else:
             print("Closed!")
+            return None
 
     @decorator_add_term
     def add_terminal(self, terminal):
@@ -83,12 +91,20 @@ class Restaurant:
             return True
         return False
 
+    #   Асинхронный метод приготовления пиццы
+    async def cooking_async(self, order):
+        cooking_list = self.__cooking(order)
+
+        await asyncio.wait(cooking_list)
+
     #   Метод начала приготовления ресторана
     def __cooking(self, order):
+        cooking_list = []
+
         for pizza in order.order_list:
-            pizza.cook()
+            cooking_list.append(pizza.cook_async())
 
-
+        return cooking_list
 
 
 

@@ -1,14 +1,13 @@
+import asyncio
+import time
+from random import randint
 from Pizzeria.PizzaPrices import PRICES
 from Pizzeria.Dish import Dish
 from Pizzeria.PizzaMetaclass import PizzaMetaclass
-import time
+from threading import Thread
 
 
-class Pizza(metaclass=PizzaMetaclass):
-
-    def __new__(cls, *args, **kwargs):
-        print('- Pizza.__new__ - Creating object.')
-        return super(Pizza, cls).__new__(cls)
+class Pizza(Dish):
 
     def __init__(self, size, name, ingredients, sauce, dough):
         self._name = name
@@ -100,26 +99,36 @@ class Pizza(metaclass=PizzaMetaclass):
         этапы приготовления пиццы и вызываются только из метода cook
     """
 
-    def __slice_pizza(self):
-        print("Slicing pizza...")
+    async def __slice_pizza(self):
         if self._size == "small":
-            time.sleep(0.1 * 4)
+            sleep_time = (randint(1, 24) / 4)
         elif self._size == "middle":
-            time.sleep(0.1 * 6)
+            sleep_time = (randint(1, 24) / 6)
         else:
-            time.sleep(0.1 * 8)
+            sleep_time = (randint(1, 24) / 8)
 
-    def __slice_ingredients(self):
-        print("Slicing ingredients...")
-        time.sleep(0.5)
+        print("{0} - Slicing pizza... - {1} s".format(self._name, sleep_time))
+        await asyncio.sleep(sleep_time)
 
-    def cook(self):
-        self.__slice_ingredients()
+    async def __slice_ingredients(self):
+        sleep_time = randint(1, 5)
+        print("{0} - Slicing ingredients... - {1} s".format(self._name, sleep_time))
+        await asyncio.sleep(sleep_time)
 
-        print("Cooking pizza...")
-        time.sleep(0.6)
+    async def __baking(self):
+        sleep_time = randint(1, 8)
+        print("{0} - Cooking pizza... - {1} s".format(self._name, sleep_time))
+        await asyncio.sleep(sleep_time)
 
-        self.__slice_pizza()
+    async def cook(self):
+        await self.__slice_ingredients()
+
+        await self.__baking()
+
+        await self.__slice_pizza()
+
+    async def cook_async(self):
+        await self.cook()
 
 
 """
@@ -138,13 +147,8 @@ class PizzaBarbecue(Pizza):
     __sauce = "BBQ"
     __dough = "thin"
 
-    def __new__(cls, *args, **kwargs):
-        print('- PizzaBarbecue.__new__ - Creating object.')
-        return super(PizzaBarbecue, cls).__new__(cls)
-
     def __init__(self, size="small"):
         super().__init__(size, self.__name, self.__origin_ingredients, self.__sauce, self.__dough)
-        print("- PizzaBarbecue.__init__ - Initializing object.")
 
     @classmethod
     def get_name(cls):
@@ -158,13 +162,8 @@ class PizzaMargarita(Pizza):
     __sauce = "tomato"
     __dough = "thin"
 
-    def __new__(cls, *args, **kwargs):
-        print('- PizzaMargarita.__new__ - Creating object.')
-        return super(PizzaMargarita, cls).__new__(cls)
-
     def __init__(self, size="small"):
         super().__init__(size, self.__name, self.__origin_ingredients, self.__sauce, self.__dough)
-        print("- PizzaMargarita.__init__ - Initializing object.")
 
     @classmethod
     def get_name(cls):
@@ -178,13 +177,8 @@ class PizzaPepperoni(Pizza):
     __sauce = "tomato"
     __dough = "thick"
 
-    def __new__(cls, *args, **kwargs):
-        print('- PizzaPepperoni.__new__ - Creating object.')
-        return super(PizzaPepperoni, cls).__new__(cls)
-
     def __init__(self, size="small"):
         super().__init__(size, self.__name, self.__origin_ingredients, self.__sauce, self.__dough)
-        print("- PizzaPepperoni.__init__ - Initializing object.")
 
     @classmethod
     def get_name(cls):
