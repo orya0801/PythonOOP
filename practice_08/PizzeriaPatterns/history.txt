@@ -1,0 +1,5 @@
+Terminal 1
+1. BBQ - small	300
+2. Margarita - large	370
+TOTAL: 670
+

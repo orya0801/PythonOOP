@@ -18,7 +18,7 @@ class PizzeriaApp(Tk):
         #   Устанавливаем имя окна
         self.title(restaurant.name)
         #   Устанавливаем размеры окна
-        self.geometry("500x650")
+        self.geometry("500x700")
 
         self.frame_menu = MenuFrame(restaurant.menu, self, self)
         self.frame_menu.pack()
@@ -34,6 +34,9 @@ class PizzeriaApp(Tk):
     def calculate_order_price(self):
         price = self.order.price
         messagebox.showinfo("Order", "TOTAL PRICE: {0}".format(price))
+
+    def clear_order(self):
+        self.order = Order(self.restaraunt.terminals[0])
 
 
 class MenuFrame(Frame):
@@ -67,8 +70,7 @@ class MenuFrame(Frame):
                 self.label_size.grid(row=rows_count, column=2, sticky="nsew", pady=3)
 
                 self.button_add = Button(self, text="Add", font=NORMAL_FONT)
-                self.button_add.bind('<Button-1>', lambda event, a=pizza_obj.name, b=size:
-                                self.add_pizza(a, b))
+                self.button_add.bind('<Button-1>', lambda event, a=pizza_obj.name, b=size: self.add_pizza(a, b))
                 self.button_add.grid(row=rows_count, column=3, sticky="nsew", pady=3)
 
                 rows_count += 1
@@ -96,9 +98,13 @@ class OrderFrame(Frame):
         self.listbox_order = Listbox(self, width=self.master.winfo_screenwidth(), font=NORMAL_FONT)
         self.listbox_order.pack()
 
-        # Order Button
-        self.button_calc = Button(self, text="Calculate", font=NORMAL_FONT, command=self.calculate_price)
+        # Calculate Price Button
+        self.button_calc = Button(self, text="Calculate price", font=NORMAL_FONT, command=self.calculate_price)
         self.button_calc.pack(pady=5)
+
+        # Delete Pizza from Order:
+        self.button_clear = Button(self, text="Clear order", font=NORMAL_FONT, command=self.clear_order)
+        self.button_clear.pack(pady=5)
 
     def add_pizza_to_list(self, pizza):
         pizza_str = "{0}     {1}     {2}".format(pizza.name, pizza.size, pizza.price)
@@ -106,6 +112,10 @@ class OrderFrame(Frame):
 
     def calculate_price(self):
         self.controller.calculate_order_price()
+
+    def clear_order(self):
+        self.listbox_order.delete(0, END)
+        self.controller.clear_order()
 
 
 rest = Restaurant(10, 22)
