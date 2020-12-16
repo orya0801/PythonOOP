@@ -3,6 +3,20 @@ from PizzeriaPatterns.Restaurant import Restaurant
 from PizzeriaPatterns.command import *
 from PizzeriaPatterns.TemplateMethod import *
 
+"""
+    В папке PizzeriaPatterns представлены переработанные и новые классы для
+    реализации паттернов.
+    
+    Ипользуемые паттерны:
+    1. Команда         - паттерн реализован в файле command.py. Он передает команды гостя в качестве объектов
+    2. Цепочка событий - паттерн реализован в файле PaymentHandler.py. Паттерн занимается выбором типа платежа.
+    3. Шаблонный метод - паттерн реализован в файле TemplateMethod.py. Реализует печать заказов в файлы различного типа.
+    4. Одиночка        - паттерн реализован в файле DbWorket.py. Класс DatabaseWorker с помощью метакласса SingletonMeta 
+    был реалиован как синглтон.
+    
+    В папке Pizzeria лежат неизменные файлы, на которые ссылается новый проект.
+"""
+
 
 def main():
     # Инициализация
